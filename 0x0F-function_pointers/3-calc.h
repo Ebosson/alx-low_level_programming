@@ -1,10 +1,10 @@
-#ifndef CALC_H
-#define CALC_H
+#ifndef _HEADER_
+#define _HEADER_
 
 /**
- * struct op - A struct op.
- * @op: The operator.
- * @f: The associated function.
+ * struct op - Struct op
+ * @op: The operator
+ * @f: The function associated
  */
 typedef struct op
 {
@@ -12,12 +12,12 @@ typedef struct op
 	int (*f)(int a, int b);
 } op_t;
 
-int op_add(int a, b);
-int op_sub(int a, b);
-int op_mul(int a, b);
-int op_div(int a, b);
-int op_mod(int a, b);
-int (*get_op_func(char *s))(int, int); /* Added a space after int */
+int op_add(int a, int b);
+int op_sub(int a, int b);
+int op_mul(int a, int b);
+int op_div(int a, int b);
+int op_mod(int a, int b);
+int (*get_op_func(char *s))(int, int);
 
 #endif
 
